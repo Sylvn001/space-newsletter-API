@@ -2,6 +2,7 @@ FROM ruby:3
 
 RUN gem install bundler -v 2.0.2
 WORKDIR /myapp
+COPY . /myapp/
 ENV BUNDLER_VERSION 2.0.2
 
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
