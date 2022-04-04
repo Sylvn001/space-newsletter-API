@@ -18,8 +18,7 @@ Things you may want to cover:
 
 * Database creation && initialization
 ```
-  docker exec -it web bash
-  rails db:create db:migrate db:seed
+  docker-compose run web rails db:create db:migrate
 ```
 
 * How to run the test suite

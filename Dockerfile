@@ -1,4 +1,4 @@
-FROM ruby:3
+FROM ruby:3.0.3
 
 RUN gem install bundler -v 2.0.2
 WORKDIR /myapp
