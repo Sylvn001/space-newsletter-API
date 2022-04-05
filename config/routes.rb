@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root "articles#index"
+  get '/', to: 'api#index'
+  root "api#index"
 
   namespace 'api' do
     namespace 'v1' do
