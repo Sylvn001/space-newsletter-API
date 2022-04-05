@@ -18,7 +18,7 @@ Things you may want to cover:
 
 * Database creation && initialization
 ```
-  docker-compose run web rails db:create db:migrate
+  The database are configured using Heroku
 ```
 
 * How to run the test suite
