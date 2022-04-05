@@ -1,14 +1,12 @@
-# README
+# Space Flight News 🏅
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-Things you may want to cover:
 
 * Ruby version 3.*
-
 * System dependencies
-  - Docker
+  - [Docker](https://www.docker.com/get-started/)
 
 * Docker Configuration
 ```
@@ -16,9 +14,9 @@ Things you may want to cover:
   docker-compose up
 ```
 
-* Database creation && initialization
+* Database initialization
 ```
-  The database are configured using Heroku
+  docker-compose rails db:seed
 ```
 
 * How to run the test suite
