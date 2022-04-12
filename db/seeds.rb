@@ -1,6 +1,9 @@
+require_relative  '../app/repositories/space_news_repository'
+space_news_repository = SpaceNewsRepository.new
 
-# response = RestClient.get url
+articles = space_news_repository.getArticles
 
-# response.each do |article|
-#   puts article
-# end
+articles.each do |article|
+  puts article
+  Article.new(article).save
+end
