@@ -2,7 +2,7 @@ require 'net/http'
 
 class SpaceNewsRepository
   def initialize
-    @base_uri = 'https://api.spaceflightnewsapi.net/v3/articles'
+    @base_uri = 'https://api.spaceflightnewsapi.net/v3/articles?_limit=100'
   end
 
   def getArticles

@@ -15,13 +15,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_05_142736) do
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.boolean "featured"
     t.string "title"
     t.string "url"
     t.string "imageUrl"
     t.string "newsSite"
     t.string "summary"
-    t.string "publishedAt"
+    t.datetime "publishedAt"
+    t.datetime "updatedAt"
+    t.boolean "featured"
     t.bigint "launch_id"
     t.bigint "event_id"
     t.datetime "created_at", null: false
